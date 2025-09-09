@@ -357,3 +357,5 @@ whatisthis(perf) # gives class of the variable
 #+ ## multiple comparison
 perf %>% tidy() %>% select(c("p.value")) %>% slice(-1)
 perf %>% tidy() %>% select(c("p.value")) %>% slice(-1) %>% unlist() %>% p.adjust()
+install.packages('ggplot2')
+
