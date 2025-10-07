@@ -3,13 +3,18 @@
 #' author: Garner Mary
 #' abstract: |
 #'  | Provide a summary of objectives, study design, setting, participants,
-#'  | sample size, predictors, outcome, statistical analysis, results,
+#'  | sample size, p
+#'  
+#'  predictors, outcome, statistical analysis, results,
 #'  | and conclusions.
 #' documentclass: article
 #' description: 'Manuscript'
 #' clean: false
 #' self_contained: true
 #' number_sections: false
+#' 
+#'  
+#'  
 #' keep_md: true
 #' fig_caption: true
 #' output:
@@ -169,10 +174,15 @@ as.Date(new_date, tryFormats = c("%y-%m-%d"))
 #' values.
 #'
 #' ### Vectors
-#'
+# vectors ----
 #' The default data structure in R is a `vector`. You create one with the `c()`
 #' command with any number of arguments. All items in a vector have to be the
 #' same type.
+
+# 
+# 
+
+
 
 #+ vectors_c
 print(foo <- c(56,78,34,97,2,86))
@@ -259,7 +269,8 @@ bat <- sample(1:10, 30, replace = TRUE)*1000
 table(bat)
 bat
 head(bat) # top 6 elements
-tail(bat) # last 6 elements
+#
+
 diff(bat) # difference between two values
 sum(bat) # sums all values
 seq_along(bat) # sequence all values
@@ -281,6 +292,7 @@ max(bat)
 #+ vectors_aggregate
 
 #' ### Data Frames
+#' datada 
 #'
 #' You can bundle several vectors of the same length together into a
 #' `data.frame` using the `data.frame()` command. A `data.frame` is a tabular
@@ -357,5 +369,148 @@ whatisthis(perf) # gives class of the variable
 #+ ## multiple comparison
 perf %>% tidy() %>% select(c("p.value")) %>% slice(-1)
 perf %>% tidy() %>% select(c("p.value")) %>% slice(-1) %>% unlist() %>% p.adjust()
-install.packages('ggplot2')
+
+
+#vectors
+y<-1:5
+
+#Create a sequence
+y<-1:5
+
+y<-1:5 #Creates a sequence: 1,2,3,4,5
+y
+
+z<-seq(1,10, by=2)#1,3,5,7,9
+
+z<-seq(1,10, by =2) #Generates: 1,3,5,7,9
+z
+
+
+r<-rep(c(1,2), times = 3) #Repeat elements 1,2,1,2,1,2
+r
+
+#Create a numeric vector
+scores <-c(85,90,78,92)
+scores
+
+#Create a character vector
+c("Anna", "Luis", "Jamal", "Pyria")
+
+
+#assign 10 to myVar 1
+ myvar1 <- 10 
+  
+#assign 5 to myVar 2
+myvar2 <-5
+
+#multiply and print
+print(myvar1 * myvar2)
+
+?print
+
+ 
+
+
+
+ # Assign a value to my apples
+my_apples <-6
+
+# Assign a value to my oranges
+my_oranges <-5
+
+#print the result of adding my_apples and my_oranges
+my_apples + my_oranges
+
+#Change the value  of my_numeric to 42
+
+my_numeric <-42
+
+
+ # Change the value of my_numeric variable to 42
+my_numeric <-42
+
+ #Change my character variable to "universe"
+my_character <- "universe"
+
+ #Change my_logical variable to FALSE
+my_logical <-FALSE
+
+#assign a value
+x<-10
+
+#check the type
+class(x)
+
+#declare variables of different types
+my_numeric <-42
+my_character <-"universe"
+my_logical <- FALSE
+
+#check class of my_numeric
+class(my_numeric)
+
+#Assign a value to the variables my_apples and my_oranges
+my_apples <-4
+my_oranges <-6
+
+#Add these two variables together
+my_apples + my_oranges
+
+# Create the variable my_fruit
+my_fruit <- my_apples + my_oranges
+  
+ #Assign a value to the variable my_apples
+my_apples <-5
+my_apples + my_oranges
+
+my_oranges <-6
+my_apples + my_oranges
+ 
+#Create a variable my_fruit and print it out
+
+my_fruit<- my_apples + my_oranges
+
+
+#Change my_numeric to be 42
+my_numeric <-42
+
+#Change my_character to 
+my_character <-"universe"
+
+#Change my_logical to be FALSE
+my_logical <-FALSE
+my_character<-"universe"
+
+
+#Create a 3 x 2 matrix with numbers 1 to 6
+m<-matrix(1:6,nrow=3,ncol=2)
+
+
+#Create a 3 x 2 matrix with numbers 1 to 6
+m<-matrix(1:6, nrow = 3, ncol = 2)
+
+#View the matrix
+m
+
+m<-matrix(1:6, nrow = 3, ncol = 2)
+
+
+
+#" ## "live data practice
+#"
+
+datapath <-"C:\\Users\\msgar\\Downloads\\exp1_meq_data.csv"
+
+externaldata <-import(datapath)
+
+names(externaldata)
+summary(externaldata)
+sapply(externaldata,class)
+processeddata<-mutate(externaldata,randomnumber=rnorm(n=n()))
+    
+                     
+
+
+
+
 
