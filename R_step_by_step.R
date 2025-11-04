@@ -398,8 +398,8 @@ c("Anna", "Luis", "Jamal", "Pyria")
 
 
 #assign 10 to myVar 1
- myvar1 <- 10 
-  
+myvar1 <- 10 
+
 #assign 5 to myVar 2
 myvar2 <-5
 
@@ -408,11 +408,11 @@ print(myvar1 * myvar2)
 
 ?print
 
- 
 
 
 
- # Assign a value to my apples
+
+# Assign a value to my apples
 my_apples <-6
 
 # Assign a value to my oranges
@@ -426,13 +426,13 @@ my_apples + my_oranges
 my_numeric <-42
 
 
- # Change the value of my_numeric variable to 42
+# Change the value of my_numeric variable to 42
 my_numeric <-42
 
- #Change my character variable to "universe"
+#Change my character variable to "universe"
 my_character <- "universe"
 
- #Change my_logical variable to FALSE
+#Change my_logical variable to FALSE
 my_logical <-FALSE
 
 #assign a value
@@ -458,14 +458,14 @@ my_apples + my_oranges
 
 # Create the variable my_fruit
 my_fruit <- my_apples + my_oranges
-  
- #Assign a value to the variable my_apples
+
+#Assign a value to the variable my_apples
 my_apples <-5
 my_apples + my_oranges
 
 my_oranges <-6
 my_apples + my_oranges
- 
+
 #Create a variable my_fruit and print it out
 
 my_fruit<- my_apples + my_oranges
@@ -507,8 +507,8 @@ names(externaldata)
 summary(externaldata)
 sapply(externaldata,class)
 processeddata<-mutate(externaldata,randomnumber=rnorm(n=n()))
-    
-                     
+
+
 
 
 
